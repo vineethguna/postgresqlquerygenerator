@@ -1,0 +1,4 @@
+Dependencies
+-------------
+
+psycopg2 - PostgreSQL adapter for python
