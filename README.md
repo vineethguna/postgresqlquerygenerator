@@ -24,7 +24,7 @@ Import **dbOperations** and create an object of **DBOperations** class by passin
     dbObj = dbOperations.DBOperations(databasename, username, password)
 
 
-###CREATE TABLE
+### CREATE TABLE
 
 The below function will create a table and if succeeded returns True else returns False
 
@@ -34,7 +34,7 @@ The below function will create a table and if succeeded returns True else return
 * tablename - The table Name to be created
 * schema  - The table schema to be created like information about columns
 
-###DROP TABLE
+### DROP TABLE
 
 The below function will drop a table and if succeeded returns True else returns False
 
@@ -42,7 +42,7 @@ The below function will drop a table and if succeeded returns True else returns 
 
 * tablename - The table Name to be dropped
 
-###INSERT TUPLE OR ROW
+### INSERT TUPLE OR ROW
 
 The below function will insert a row and if succeeded returns True else returns False
 
@@ -53,7 +53,7 @@ The below function will insert a row and if succeeded returns True else returns 
   **Ex: {"id": 10, "username": test}**    
   where "id" and "username" are column names in the table
 
-###SELECT ROWS
+### SELECT ROWS
 
 The below function will select rows or row based on the parameters given
 
@@ -66,7 +66,7 @@ The below function will select rows or row based on the parameters given
 * number - This parameter is used when using MANY_TUPLES 
 * returnForm - The return format of rows defaults to tuple, possible values dict
 
-###UPDATE ROW
+### UPDATE ROW
 
 The below function updates a row based on WHERE condition and if succeeded returns True else returns False
 
@@ -76,7 +76,7 @@ The below function updates a row based on WHERE condition and if succeeded retur
 * updateFields - This is a dictionary similar to fields in insertTuple() 
 * whereCondition - This is also a dictionary which contains a key "fields" and "condition"
 
-###DELETE ROW
+### DELETE ROW
 
 The below function deletes a row based on WHERE condition and if succeeded returns True else returns False
  
@@ -85,7 +85,7 @@ The below function deletes a row based on WHERE condition and if succeeded retur
 * tablename - The tablename in which the row is to be deleted
 * whereCondition - This is also a dictionary which contains a key "fields" and "condition"
 
-###CROSS JOIN
+### CROSS JOIN
 
 The below function gives you the cross join of the given two tables
 
@@ -95,13 +95,13 @@ The below function gives you the cross join of the given two tables
 * fields - A list of columns of table 1   Ex: ["id"]
 * table2 - The second table name in cross join
 
-###EXECUTE THE LAST QUERY
+### EXECUTE THE LAST QUERY
 
 The below function executes the last successful query
 
     dbobj.executeLastQuery()
 
-###OPERATORS DEFINED FOR CONDITIONS
+### OPERATORS DEFINED FOR CONDITIONS
 
 * lt - '<'
 * gt - '>'
@@ -111,7 +111,7 @@ The below function executes the last successful query
 
 
 
-##FOR EXAMPLES REGARDING THE ABOVE FUNCTIONS DO REFER testFile.py
+## FOR EXAMPLES REGARDING THE ABOVE FUNCTIONS DO REFER testFile.py
 
 
 
